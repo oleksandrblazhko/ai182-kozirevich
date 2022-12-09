@@ -14,7 +14,7 @@
 ## Крок 3
 #### Зареєструйте нового користувача в СКБД PostgreSQL, назва якого співпадає з вашим ім'ям, наприклад ivan, і довільним паролем.
 
-Створено користувача dianochka з паролем tokyo_ghoul командою CREATE USER yaroslav WITH PASSWORD 'random_password';. Метакомандою \du переглянуто список усіх доступних користувачів.
+Створено користувача yaroslav з паролем random_password командою CREATE USER yaroslav WITH PASSWORD 'random_password';. Метакомандою \du переглянуто список усіх доступних користувачів.
 ![image](https://user-images.githubusercontent.com/79399103/206708119-1bde6692-32df-4630-a64e-290b98b96563.png)
 
 ## Крок 4
@@ -125,33 +125,32 @@ GRANT DELETE ON hotel TO yaroslav; (перше вікно)
 #### Повторіть крок 16.
 
 DELETE FROM hotel WHERE name = 'new name'; (друге вікно)
-
-![image](https://user-images.githubusercontent.com/56130345/204792098-9f34deb8-a4a1-4b6d-b296-ae16eff7b1cf.png)
+![image](https://user-images.githubusercontent.com/79399103/206717006-a9c25648-c393-461a-91d5-a95c23918362.png)
 
 ## Крок 19
 #### Зніміть всі повноваження з таблиці для нового користувача.
 
-REVOKE ALL ON university FROM dianochka;
+REVOKE ALL ON hotel FROM yaroslav;
 
-![image](https://user-images.githubusercontent.com/56130345/204792298-0c707e3d-e1c1-46a1-97c4-5af9b98c23db.png)
+![image](https://user-images.githubusercontent.com/79399103/206717131-a4ec7cd5-af76-4403-891e-8da79fef8e57.png)
 
 ## Крок 20
 #### Створіть команду внесення запису в таблицю (INSERT) і виконайте її від імені нового користувача. Проаналізуйте результат виконання команди.
 
 Повноваження для додавання даних у таблицю відсутні.
 
-![image](https://user-images.githubusercontent.com/56130345/204792421-e863812a-e277-4a2e-8211-603a3f34f844.png)
+![image](https://user-images.githubusercontent.com/79399103/206717467-827f7d30-e89a-4e52-bf8c-ed35a7c50bb2.png)
 
 ## Крок 21
 #### Встановіть повноваження на внесення даних до таблиці для ролі.
 
-GRANT INSERT ON university TO dianochka; (перше вікно)
+GRANT INSERT ON hotel TO yaroslav; (перше вікно)
 
-![image](https://user-images.githubusercontent.com/56130345/204792578-eb9f53e3-742c-4b68-911d-7683e8105de2.png)
+![image](https://user-images.githubusercontent.com/79399103/206717543-b8e6d794-2aab-49b5-9f4d-9bbea4696d2f.png)
 
 ## Крок 22
 #### Повторіть крок 20.
 
-![image](https://user-images.githubusercontent.com/56130345/204792682-7bc4cbf3-9590-464b-a0ea-6abfb059d560.png)
+![image](https://user-images.githubusercontent.com/79399103/206717645-8d581e98-566e-4077-8f6a-e77f619b98ac.png)
 
 
