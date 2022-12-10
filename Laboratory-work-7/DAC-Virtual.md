@@ -31,12 +31,12 @@ SELECT * FROM yaroslav.hotel;
 ![image](https://user-images.githubusercontent.com/79399103/206747754-13ee4803-fc64-4efb-b53a-b07ab6eba085.png)
 
 
-INSERT into university values (5, 'Bomber', 42342);
-![image](https://user-images.githubusercontent.com/56130345/205632619-5b079e42-ac2a-4435-9392-1991a4a0dfc7.png)
+insert into hotel values (9, 'name 11', 'address 11');
+![image](https://user-images.githubusercontent.com/79399103/206851967-d734746d-5117-47d3-8aa8-54be0d269020.png)
 
 
-UPDATE university SET u_id = 0;
-![image](https://user-images.githubusercontent.com/56130345/205632733-1d632845-20ec-484b-b032-eebdbc4749aa.png)
+UPDATE hotel SET name = 'new name';
+![image](https://user-images.githubusercontent.com/79399103/206851986-a74c9e48-92e1-4cff-841a-a184bf027136.png)
 
-DELETE FROM university WHERE u_id = 2;
-![image](https://user-images.githubusercontent.com/56130345/205632811-4688931e-42b0-46c8-92d6-e78005cdfe23.png)
+DELETE FROM hotel WHERE h_id = 1;
+![image](https://user-images.githubusercontent.com/79399103/206852011-b05b4b9c-512f-4e4c-8a61-82640e6213c1.png)
